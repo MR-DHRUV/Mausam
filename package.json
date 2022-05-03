@@ -1,4 +1,4 @@
-{ 
+{
   "homepage": "https://MR-DHRUV.github.io/Mausam---The-Weather-App-",
   "name": "weather",
   "version": "0.1.0",
@@ -19,6 +19,8 @@
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
