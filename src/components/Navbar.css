@@ -1,0 +1,20 @@
+.cityName{
+    text-decoration: none;
+    color: #198754;
+    text-transform: capitalize;
+}
+.cityName:hover{
+    text-decoration: underline;
+    color: #198754;;
+}
+.myLocation{
+    margin-right: 20px;
+    margin-top:5px;
+    padding: 3px;
+}
+.myNavBackground{
+    background: transparent !important;
+}
+.myNav{
+    height: 8vh;
+}

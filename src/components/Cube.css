@@ -1,0 +1,241 @@
+.wrap {
+    width: 220px;
+    position: relative;
+  }
+  
+  .holder {
+    width: 250px;
+    left: -20px;
+    top: -60px;
+    border-radius: 50px 50px 0 0;
+    background-color: #dfcbb1;
+    height: 220px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px -8px 1px #d7bf9f;
+  }
+  .holder .ornate {
+    display: none;
+    background-color: #BDADEA;
+    height: 15px;
+    position: relative;
+    margin: 25px auto;
+    transform: rotate(-45deg);
+    width: 15px;
+    box-shadow: 0px -6px 1px #d7bf9f;
+  }
+  .holder .ornate:before, .holder .ornate:after {
+    content: "";
+    background-color: #BDADEA;
+    border-radius: 50%;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+  }
+  .holder .ornate:before {
+    top: -10px;
+    left: 0;
+  }
+  .holder .ornate:after {
+    left: 10px;
+    top: 0;
+  }
+  .holder .side {
+    position: absolute;
+    width: 22px;
+    height: 140px;
+    background-color: #d7bf9f;
+    bottom: -25px;
+    box-shadow: 4px -10px 2px 2px #d0b38d;
+  }
+  .holder .side:after {
+    content: "";
+  }
+  .holder .side.left {
+    left: -2px;
+  }
+  .holder .side.right {
+    box-shadow: -4px -10px 2px 2px #c8a77b;
+    right: -2px;
+  }
+  
+  .calender-days,
+  calender-month {
+    width: 220px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+  
+  .cube-wrap {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .rectangle-wrap {
+    width: 220px;
+    height: 100px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .cubeoid, .calender-month .rectangle, .cube {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform: translateZ(-10px) rotateX(-10deg);
+    transform-origin: "center center";
+    width: 100%;
+    height: 100%;
+  }
+  .cubeoid > .face, .calender-month .rectangle > .face, .cube > .face {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #E6D7C3;
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    text-shadow: 0px 1px 1px #4d4d4d;
+    color: #555555;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
+  }
+  
+  .cube {
+    -webkit-animation: cycle-1 2s linear;
+            animation: cycle-1 2s linear;
+  }
+  .cube.cube-2 {
+    -webkit-animation: cycle-2 2s ease;
+            animation: cycle-2 2s ease;
+  }
+  .cube > .face {
+    margin: 0;
+    width: 99px;
+    height: 99px;
+    line-height: 80px;
+    font-size: 5rem;
+  }
+  
+  .calender-month {
+    position: relative;
+    z-index: -1;
+    margin-top: -10px;
+  }
+  .calender-month .rectangle {
+    -webkit-animation: cycle-1 1.5s ease;
+            animation: cycle-1 1.5s ease;
+    height: 50px;
+  }
+  .calender-month .rectangle > .face {
+    width: 207px;
+    height: 48px;
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+  
+  .cube .face.front {
+    transform: rotateY(0deg) translateZ(50px);
+  }
+  
+  .cube .face.back {
+    transform: rotateX(180deg) translateZ(50px);
+  }
+  
+  .cube .face.right {
+    transform: rotateY(90deg) translateZ(50px);
+  }
+  
+  .cube .face.left {
+    transform: rotateY(-90deg) translateZ(50px);
+  }
+  
+  .cube .face.top {
+    transform: rotateX(90deg) translateZ(50px);
+  }
+  
+  .cube .face.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+  }
+  
+  .rectangle .face.front {
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  
+  .rectangle .face.back {
+    transform: rotateX(180deg) translateZ(25px);
+  }
+  
+  .rectangle .face.right {
+    transform: rotateY(90deg) translateZ(25px);
+  }
+  
+  .rectangle .face.left {
+    transform: rotateY(-90deg) translateZ(25px);
+  }
+  
+  .rectangle .face.top {
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  
+  .rectangle .face.bottom {
+    transform: rotateX(-90deg) translateZ(25px);
+  }
+  
+  .cube.show-front {
+    transform: translateZ(-50px) rotateY(0deg);
+  }
+  
+  .cube.show-back {
+    transform: translateZ(-50px) rotateX(-180deg);
+  }
+  
+  .cube.show-right {
+    transform: translateZ(-50px) rotateY(-90deg);
+  }
+  
+  .cube.show-left {
+    transform: translateZ(-50px) rotateY(90deg);
+  }
+  
+  .cube.show-top {
+    transform: translateZ(-50px) rotateX(-90deg);
+  }
+  
+  .cube.show-bottom {
+    transform: translateZ(-50px) rotateX(90deg);
+  }
+  
+  @-webkit-keyframes cycle-1 {
+    from {
+      transform: translateZ(-10px) rotateX(0deg);
+    }
+    to {
+      transform: translateZ(-10px) rotateX(-360deg);
+    }
+  }
+  
+  @keyframes cycle-1 {
+    from {
+      transform: translateZ(-10px) rotateX(0deg);
+    }
+    to {
+      transform: translateZ(-10px) rotateX(-360deg);
+    }
+  }
+  @-webkit-keyframes cycle-2 {
+    from {
+      transform: translateZ(-10px) rotateY(0deg);
+    }
+    to {
+      transform: translateZ(-10px) rotateY(-360deg);
+    }
+  }
+  @keyframes cycle-2 {
+    from {
+      transform: translateZ(-10px) rotateY(0deg);
+    }
+    to {
+      transform: translateZ(-10px) rotateY(-360deg);
+    }
+  }

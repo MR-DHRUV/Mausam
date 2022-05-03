@@ -1,0 +1,44 @@
+.iconNmain {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+.allOtherInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+.tempByTimeLi {
+  color: black !important;
+  display: flex;
+  flex-direction: column;
+}
+.myH1{
+    margin: 0px;
+}
+
+.mySpan1{
+    display: none !important;
+    margin-left: 3vw;
+}
+
+@media screen and (width<850px) {
+    .mySpan{
+        display: none !important;
+    }
+    .mySpan1{
+        display: flex !important;
+    }
+}
+.toggleHideBox{
+    display: flex;
+    flex-direction: column;
+}
+.weekdata{
+    margin-bottom: 0px !important;
+}

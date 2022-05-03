@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+.weather-card {
+  /* margin: 60px auto; */
+  width: 100vw;
+  background: #fff;
+  /* box-shadow: 0 1px 38px rgba(0, 0, 0, 0.15), 0 5px 12px rgba(0, 0, 0, 0.25); */
+}
+.weather-card .top {
+  /* position: relative; */
+
+  width: 100%;
+  background: url("https://s-media-cache-ak0.pinimg.com/564x/cf/1e/c4/cf1ec4b0c96e59657a46867a91bb0d1e.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.weather-card .top .wrapper {
+  padding: 30px;
+  /* position: relative; */
+  /* z-index: 1; */
+}
+.weather-card .top .wrapper .mynav {
+  /* height: 20px; */
+}
+.weather-card .top .wrapper .mynav .lnr {
+  color: #fff;
+  /* font-size: 20px; */
+}
+.weather-card .top .wrapper .mynav .lnr-chevron-left {
+  display: inline-block;
+  float: left;
+}
+.weather-card .top .wrapper .mynav .lnr-cog {
+  display: inline-block;
+  float: right;
+}
+.weather-card .top .wrapper .heading {
+  /* font-size: 35px; */
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+}
+.weather-card .top .wrapper .location {
+  /* font-size: 21px; */
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+}
+
+.weather-card .top .wrapper .temp a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.weather-card .top .wrapper .temp .temp-value {
+  display: inline-block;
+  /* font-size: 85px; */
+  font-weight: 600;
+  color: #fff;
+}
+.weather-card .top .wrapper .temp .deg {
+  display: inline-block;
+  /* font-size: 35px; */
+  font-weight: 600;
+  color: #fff;
+  vertical-align: top;
+  margin-top: 10px;
+}
+/* .weather-card .top:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block; */
+/* position: absolute; */
+/* top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+} */
+.bottom {
+  padding: 0 10px;
+  background: white;
+  height: 40vh;
+}
+.weather-card .bottom .wrapper .forecast {
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  padding-top: 20px;
+  max-height: 155px;
+  margin-right: 12px;
+}
+.weather-card .bottom .wrapper .forecast a {
+  text-decoration: none;
+  color: #000;
+}
+.weather-card .bottom .wrapper .forecast .go-up {
+  text-align: center;
+  display: block;
+  /* font-size: 25px; */
+  margin-bottom: 10px;
+}
+.weather-card .bottom .wrapper .forecast li {
+  display: block;
+  /* font-size: 25px; */
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.25);
+  line-height: 1em;
+  margin-bottom: 30px;
+}
+.weather-card .bottom .wrapper .forecast li .date {
+  display: inline-block;
+}
+.weather-card .bottom .wrapper .forecast li .condition {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  /* font-size: 25px; */
+}
+.weather-card .bottom .wrapper .forecast li .condition .temp {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 20px; */
+  font-weight: 400;
+  padding-top: 2px;
+}
+.weather-card .bottom .wrapper .forecast li .condition .temp .deg {
+  display: inline-block;
+  /* font-size: 10px; */
+  font-weight: 600;
+  margin-left: 3px;
+  vertical-align: top;
+}
+.weather-card .bottom .wrapper .forecast li .condition .temp .temp-type {
+  /* font-size: 20px; */
+}
+.weather-card .bottom .wrapper .forecast li.active {
+  color: rgba(0, 0, 0, 0.8);
+}
+.weather-card.rain .top {
+  background: url("./Rain.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.weather-card.snow .top {
+  background: url("./Snow.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.weather-card.dust-haze-desert .top {
+  background: url("./Dust-Haze-Desert.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.weather-card.cloudy .top {
+  background: url("./Clouds.gif") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.weather-card.sunny .top {
+  background: url("./Clear.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.weather-card.fog-mist-smoke .top {
+  background: url("./fog-smoke-mist.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  /* position: relative; */
+  /* z-index: 1; */
+}
+.additionalInfo {
+  padding-right: 1vw;
+  padding: revert-layer;
+  padding-left: 1vw;
+  padding-top: 10px;
+  color: white;
+}
+.mydegre {
+  /* font-size: 0.5rem; */
+}
+
+.latnlon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.datenloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.weekdata {
+  padding: 1rem;
+}
+
+.weektemp {
+  text-align: end;
+}
+
+.hourlyWeather {
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  min-height: 265px;
+}
+
+#mytop {
+  height: 60vh;
+  min-height: 590px;
+}
+
+.mybtn {
+  margin: 0px;
+  padding: 0%;
+  /* font-size: 1.3rem; */
+  background-color: white;
+  border: 0px solid white;
+}
+.Swipe{
+  display: none;
+}
+.mybtn:hover {
+  color: #198754;
+}
+
+.mybtn:focus {
+  border: 0px solid white;
+}
+.mybtn:active {
+  border: 0px solid white;
+}
+button:active {
+  border-style: outset;
+}
+
+.weekcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.weekcardtemp {
+  display: flex;
+  flex-direction: row;
+}
+.myweekcard {
+  width: 100%;
+}
+@media screen and(width<1350px) {
+  .additional{
+    flex-direction: column;
+  }
+  
+}
+@media screen and (width<850px) {
+  .kdCslO {
+    display: none !important;
+  }
+  .eWjCzc {
+    display: none !important;
+  }
+  .hHJTFD {
+    width: 90vw !important;
+  }
+  .eAyARa {
+    display: none !important;
+  }
+  .eAyARa:disabled {
+    display: none !important;
+  }
+  .grUxXV {
+    width: 90vw !important;
+  }
+  .additional {
+    flex-direction: column;
+  }
+  #mytop {
+    height: 70vh;
+    min-height: 700px;
+  }
+  .latnlon{
+    display: none;
+  }
+  .hourlyWeather{
+  margin: 0rem;
+  }
+  .date{
+    margin-bottom: 10px;
+  }
+  .Swipe{
+    display: flex;
+    justify-content: center;
+    color: #198754;
+  }
+}
+
+
+
+.mySpan {
+  display: flex;
+  flex-direction: row;
+}
+.weektem {
+  margin: 5px;
+  padding: 5px;
+}
+
+.myHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 2px;
+  color: #198754;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.weatherMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.leftMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.myH2 {
+  color: white;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-family: 'Pacifico', cursive;
+}
+.temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+/* to control color of carousel buttons */
+.eWjCzc:hover:enabled,
+.eWjCzc:focus:enabled {
+  color: #fff !important;
+  background-color: #198754 !important;
+  box-shadow: 0 0 0px 0 rgb(255, 255, 255) !important;
+}
+
+.eWjCzc {
+  color: #198754 !important;
+  background-color: white !important;
+}
+
+.krmNah {
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  border: none;
+  margin: 5px;
+  background-color: #198754 !important;
+  font-size: 1.3em;
+  content: "";
+  height: 10px;
+  width: 10px;
+  box-shadow: 0 0 1px 3px #19875431 !important;
+  border-radius: 50%;
+  outline: none;
+}
+
+.myNone{
+  display: none;
+}
+
+
