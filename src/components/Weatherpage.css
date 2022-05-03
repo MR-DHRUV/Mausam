@@ -321,6 +321,9 @@ button:active {
     justify-content: center;
     color: #198754;
   }
+  .hHSNMm{
+    display: none;
+  }
 }
 
 
@@ -377,13 +380,39 @@ button:active {
   background-color: #198754 !important;
   box-shadow: 0 0 0px 0 rgb(255, 255, 255) !important;
 }
+.hJKYRZ:hover:enabled,
+.hJKYRZ:focus:enabled {
+  color: #fff !important;
+  background-color: #198754 !important;
+  box-shadow: 0 0 0px 0 rgb(255, 255, 255) !important;
+}
 
 .eWjCzc {
   color: #198754 !important;
   background-color: white !important;
 }
+.hJKYRZ {
+  color: #198754 !important;
+  background-color: white !important;
+}
 
 .krmNah {
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  border: none;
+  margin: 5px;
+  background-color: #198754 !important;
+  font-size: 1.3em;
+  content: "";
+  height: 10px;
+  width: 10px;
+  box-shadow: 0 0 1px 3px #19875431 !important;
+  border-radius: 50%;
+  outline: none;
+}
+.hHSNMm {
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 250ms ease;
