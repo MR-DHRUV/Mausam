@@ -8,9 +8,9 @@ const Navbar = (props) => {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light myNavBackground myNav">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">
+                    <Link className="navbar-brand" to="/">
                         <img src={logo} alt="48" height='48' width='48' className="d-inline-block align-text-top" />
-                    </a>
+                    </Link>
 
                         <div className="nav-item myLocation">
                            <h3 className={window.innerWidth> 850 ? 'h5' : 'h6'}> City : <Link to='/' className='cityName'>{props.city}</Link></h3>

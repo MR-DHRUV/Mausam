@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": "https://MR-DHRUV.github.io/Mausam---The-Weather-App-",
   "name": "weather",
   "version": "0.1.0",
   "private": true,
