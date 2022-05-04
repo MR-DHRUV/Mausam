@@ -189,15 +189,12 @@
   /* z-index: 1; */
 }
 .additionalInfo {
-  padding-right: 1vw;
-  padding: revert-layer;
-  padding-left: 1vw;
-  padding-top: 10px;
-  color: white;
+  padding-right: 1vw !important;
+  padding-left: 1vw !important;
+  padding-top: 10px !important;
+  color: white !important;
 }
-.mydegre {
-  /* font-size: 0.5rem; */
-}
+
 
 .latnlon {
   display: flex;
@@ -285,7 +282,10 @@ button:active {
   .kdCslO {
     display: none !important;
   }
-  .eWjCzc {
+  /* .eWjCzc {
+    display: none !important;
+  } */
+  .rec-arrow {
     display: none !important;
   }
   .hHJTFD {
@@ -322,7 +322,10 @@ button:active {
     color: #198754;
   }
   .hHSNMm{
-    display: none;
+    display: none !important;
+  }
+  .rec-pagination{
+    display: none !important;
   }
 }
 
@@ -374,7 +377,7 @@ button:active {
 }
 
 /* to control color of carousel buttons */
-.eWjCzc:hover:enabled,
+/* .eWjCzc:hover:enabled,
 .eWjCzc:focus:enabled {
   color: #fff !important;
   background-color: #198754 !important;
@@ -385,18 +388,31 @@ button:active {
   color: #fff !important;
   background-color: #198754 !important;
   box-shadow: 0 0 0px 0 rgb(255, 255, 255) !important;
+} */
+
+.rec-arrow:hover:enabled,
+.rec-arrow:focus:enabled {
+  color: #fff !important;
+  background-color: #198754 !important;
+  box-shadow: 0 0 0px 0 rgb(255, 255, 255) !important;
 }
 
-.eWjCzc {
+
+
+/* .eWjCzc {
+  color: #198754 !important;
+  background-color: white !important;
+} */
+.rec-arrow {
   color: #198754 !important;
   background-color: white !important;
 }
-.hJKYRZ {
+/* .hJKYRZ {
   color: #198754 !important;
   background-color: white !important;
-}
+} */
 
-.krmNah {
+.rec-dot:focus:enabled,.rec-dot:hover:enabled{
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 250ms ease;
@@ -412,7 +428,15 @@ button:active {
   border-radius: 50%;
   outline: none;
 }
-.hHSNMm {
+
+.rec-pagination{
+  /* background-color: #198754 !important; */
+  /* box-shadow: 0 0 1px 3px #19875431 !important; */
+  /* color: #198754 !important; */
+}
+
+
+/* .hHSNMm {
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 250ms ease;
@@ -427,7 +451,7 @@ button:active {
   box-shadow: 0 0 1px 3px #19875431 !important;
   border-radius: 50%;
   outline: none;
-}
+} */
 
 .myNone{
   display: none;

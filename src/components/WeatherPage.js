@@ -226,7 +226,7 @@ const WeatherPage = (props) => {
 
 
 
-                        <h4 className="additionalInfo h5">Sunrize : {tsunrize} AM</h4>
+                        <h4 className="additionalInfo h5">Sunrise : {tsunrize} AM</h4>
                         <h4 className="additionalInfo h5">Sunset : {tsunset} PM</h4>
 
 
