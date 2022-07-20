@@ -213,7 +213,7 @@ const WeatherPage = (props) => {
                     </div>
                     <div className="additional">
 
-                        <h4 className="additionalInfo h5">Preasure : {tpressure} hPa</h4>
+                        <h4 className="additionalInfo h5">Pressure : {tpressure} hPa</h4>
                         <h4 className="additionalInfo h5">Humidity : {thumidity} % </h4>
 
 
