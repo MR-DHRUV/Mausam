@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 
 .weather-card {
   /* margin: 60px auto; */
@@ -42,7 +42,7 @@
   /* font-size: 35px; */
   font-weight: 400;
   color: #fff;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 .weather-card .top .wrapper .location {
   /* font-size: 21px; */
@@ -83,7 +83,7 @@
 .bottom {
   padding: 0 10px;
   background: white;
-  height: 40vh;
+  height: 55vh;
 }
 .weather-card .bottom .wrapper .forecast {
   margin: 0;
@@ -195,7 +195,6 @@
   color: white !important;
 }
 
-
 .latnlon {
   display: flex;
   flex-direction: row;
@@ -231,9 +230,14 @@
   min-height: 265px;
 }
 
+
 #mytop {
-  height: 60vh;
+  height: 92vh;
   min-height: 590px;
+  min-height: 590px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .mybtn {
@@ -243,7 +247,7 @@
   background-color: white;
   border: 0px solid white;
 }
-.Swipe{
+.Swipe {
   display: none;
 }
 .mybtn:hover {
@@ -273,10 +277,9 @@ button:active {
   width: 100%;
 }
 @media screen and(width<1350px) {
-  .additional{
+  .additional {
     flex-direction: column;
   }
-  
 }
 @media screen and (width<850px) {
   .kdCslO {
@@ -304,32 +307,33 @@ button:active {
     flex-direction: column;
   }
   #mytop {
-    height: 70vh;
+    height: 92vh;
     min-height: 700px;
   }
-  .latnlon{
+  .latnlon {
     display: none;
   }
-  .hourlyWeather{
-  margin: 0rem;
+  .hourlyWeather {
+    margin: 0rem;
   }
-  .date{
+  .date {
     margin-bottom: 10px;
   }
-  .Swipe{
+  .Swipe {
     display: flex;
     justify-content: center;
     color: #198754;
   }
-  .hHSNMm{
+  .hHSNMm {
     display: none !important;
   }
-  .rec-pagination{
+  .rec-pagination {
     display: none !important;
+  }
+  .bottom {
+    height: 65vh;
   }
 }
-
-
 
 .mySpan {
   display: flex;
@@ -366,7 +370,7 @@ button:active {
   color: white;
   margin-top: 3vh;
   margin-bottom: 3vh;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 }
 .temp {
   display: flex;
@@ -397,8 +401,6 @@ button:active {
   box-shadow: 0 0 0px 0 rgb(255, 255, 255) !important;
 }
 
-
-
 /* .eWjCzc {
   color: #198754 !important;
   background-color: white !important;
@@ -412,7 +414,8 @@ button:active {
   background-color: white !important;
 } */
 
-.rec-dot:focus:enabled,.rec-dot:hover:enabled{
+.rec-dot:focus:enabled,
+.rec-dot:hover:enabled {
   box-sizing: border-box;
   padding: 0;
   -webkit-transition: all 250ms ease;
@@ -429,12 +432,11 @@ button:active {
   outline: none;
 }
 
-.rec-pagination{
+.rec-pagination {
   /* background-color: #198754 !important; */
   /* box-shadow: 0 0 1px 3px #19875431 !important; */
   /* color: #198754 !important; */
 }
-
 
 /* .hHSNMm {
   box-sizing: border-box;
@@ -453,8 +455,6 @@ button:active {
   outline: none;
 } */
 
-.myNone{
+.myNone {
   display: none;
 }
-
-

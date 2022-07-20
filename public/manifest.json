@@ -1,25 +1,44 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "mausam",
+  "short_name": "mausam",
+  "theme_color": "#198754",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./maskable_icon.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose":"any maskable"
+    },
+    {
+      "src": "./favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./660e0ad8-623c-4c61-a34a-9703b685c217(1).png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./maskable_icon(1).png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    ,
+    {
+      "src": "./maskable_icon.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    }
+    ,
+    {
+      "src": "./660e0ad8-623c-4c61-a34a-9703b685c217.png",
+      "type": "image/gif",
+      "sizes": "256x256"
+    }
+  ]
 }
