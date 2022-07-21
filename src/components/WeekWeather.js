@@ -49,9 +49,9 @@ const WeekWeather = (props) => {
 
                     <span className="lnr lnr-moon condition weektemp mySpan1">
 
-                        <span className="temp weekdata h6">Min : {props.min}<sup>0</sup><span className="temp-type">C</span></span>
+                        <span className="temp weekdata h6">Min : {props.min}<sup><small>o</small></sup><span className="temp-type">C</span></span>
 
-                        <span className="temp weekdata h6">Max : {props.max}<sup>0</sup><span className="temp-type">C</span></span>
+                        <span className="temp weekdata h6">Max : {props.max}<sup><small>o</small></sup><span className="temp-type">C</span></span>
 
                     </span>
 

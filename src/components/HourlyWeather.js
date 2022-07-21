@@ -13,7 +13,7 @@ const HourlyWeather = (props) => {
             <div className="card-body">
                 <p className="card-text mycenter heading h5">{props.hour}</p>
                 <h5 className="card-title mycenter">{props.weather}</h5>
-                <h5 className="card-title mycenter">{props.temprature}0C</h5>
+                <h5 className="card-title mycenter mt-3 fw-bold">{props.temprature} <sup>o</sup>C</h5>
             </div>
         </div>
     )
