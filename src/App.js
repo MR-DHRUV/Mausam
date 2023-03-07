@@ -24,10 +24,10 @@ function App() {
   let citystateupdater = (cityName) => {
     setCity(cityName);
   }
-
+ 
  
   const location = async () => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=725a625fa656bfdae7687b3c5d2ac911`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_KEY1}`
     const response = await fetch(url);
     const data = await response.json();
     if (data) {
@@ -68,7 +68,7 @@ function App() {
       else {
 
         try {
-          const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=725a625fa656bfdae7687b3c5d2ac911&exclude=minutely&units=metric`
+          const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${process.env.REACT_APP_KEY1}&exclude=minutely&units=metric`
 
           const response = await fetch(url);
           const data = await response.json();
